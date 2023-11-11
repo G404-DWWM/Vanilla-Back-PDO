@@ -17,7 +17,7 @@ MariaDB a été conçu par des anciens fondateurs de MySQL,[ pour diverses raiso
 
 Ce sont donc des **serveurs** de base de données, qui ouvrent leurs portes pour que d'autres logiciels puissent envoyer des requêtes et recevoir des données en retour.
 
-PhpMyAdmin, HeidiSQL, MySQL CLI, et bien d'autres logiciels du genre ont tous le point commun d'être des **clients **permettant d'envoyer au serveur des requêtes SQL.
+PhpMyAdmin, HeidiSQL, MySQL CLI, et bien d'autres logiciels du genre ont tous le point commun d'être des **clients** permettant d'envoyer au serveur des requêtes SQL.
 
 Sans **client**, il n'est pas possible d'interroger un serveur SQL.
 
