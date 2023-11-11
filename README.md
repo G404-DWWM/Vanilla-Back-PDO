@@ -19,7 +19,7 @@ Ce sont donc des **serveurs **de base de données, qui ouvrent leurs portes pour
 
 PhpMyAdmin, HeidiSQL, MySQL CLI, et bien d'autres logiciels du genre ont tous le point commun d'être des **clients **permettant d'envoyer au serveur des requêtes SQL.
 
-Sans **client**,** **il n'est pas possible d'interroger un serveur SQL.
+Sans **client**, il n'est pas possible d'interroger un serveur SQL.
 
 PDO part du même principe mais au lieu de pouvoir être utilisé via une interface graphique, c'est sous forme de code PHP que l'on acquiert la possibilité de faire des requêtes. 
 
