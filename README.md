@@ -1,4 +1,4 @@
-# Vanilla-02-PDO
+# Vanilla-Back-PDO
 
 # 💾 PDO Connexion BDD
 
