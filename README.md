@@ -29,7 +29,7 @@ PDO part du même principe mais au lieu de pouvoir être utilisé via une interf
 
 
 * **Connexion à une base de données MySQL avec PDO**
-* **La préparation d'une requête **
+* **La préparation d'une requête**
 * **La récupération de la réponse d’une requête**
 
 
@@ -48,7 +48,7 @@ Voici les 2 chapitres OpenClassroom qui regroupent l'ensemble de la théorie sur
 
 
 ## 
-  **Pour faire ces exercices, vous devez utiliser le code SQL qui vous est fourni pour créer la BDD. **
+  **Pour faire ces exercices, vous devez utiliser le code SQL qui vous est fourni pour créer la BDD.**
 
 
   Utilisation de PDO pour récupérer, lire et afficher des données
@@ -62,7 +62,7 @@ Voici les 2 chapitres OpenClassroom qui regroupent l'ensemble de la théorie sur
 
 
 ## 
-  **Pour faire ces exercices, vous devez utiliser le code SQL qui vous est fourni pour créer la BDD. **
+  **Pour faire ces exercices, vous devez utiliser le code SQL qui vous est fourni pour créer la BDD.**
 
 
   Ecriture et lecture de données ( Hospital ) :
