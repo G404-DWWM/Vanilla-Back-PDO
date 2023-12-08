@@ -21,6 +21,42 @@ PDO part du même principe mais au lieu de pouvoir être utilisé via une interf
 
 # 🎦 Live coding
 
+<details>
+  <summary>Live coding</summary>
+  <pre>
+    <code class="language-php">
+      <?php
+
+      require_once('connexion.php');
+
+      // requete de mon user
+      $request =  $db->query('SELECT * FROM user');
+      $user = $request->fetch();
+
+      var_dump($user);
+
+      echo($user['prenom']);
+
+      ?>
+      <br><br><br><hr><br><br><br>
+
+      <?php
+      // requete de mes produits
+
+      $request = $db->query('SELECT * FROM product');
+      $products = $request->fetchAll();
+
+      var_dump($products);
+
+      foreach ($products as $product) {
+        echo($product['name'] . '<br><hr><br>');
+      }
+      ?>
+    </code>
+  </pre>
+</details>
+
+
 - **Connexion à une base de données MySQL avec PDO**
 - **La préparation d'une requête**
 - **La récupération de la réponse d’une requête**
