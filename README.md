@@ -57,8 +57,13 @@ PDO part du même principe mais au lieu de pouvoir être utilisé via une interf
       // on récupère la réponse à la requète grâce à fetch(), car je n'ai qu'un seul user en BDD
       $user = $request->fetch();
 
+
+     // après avoir récupéré la réponse de votre requète, ne pas hésiter à contrôler les données que l'on reçoit
+     // par exemple pour voir le type de donnée que l'on reçoit
       var_dump($user);
 
+     // grâce à mon var_dump précédent, j'ai vu que la donnée que je reçois dans $user est un tableau, et il a une colonne nommée prenom.
+     // je décide donc d'afficher sur ma page html ce prénom
       echo($user['prenom']);
 
      ?>
@@ -79,9 +84,12 @@ PDO part du même principe mais au lieu de pouvoir être utilisé via une interf
      // on récupère la réponse à la requète grâce à fetchAll(), car j'ai plusieurs produits en BDD
      $products = $request->fetchAll();
 
+     // ce var_dump me montre que je reçois un tableau, dans lequel il y a plusieurs tableau, un tableau pour chaque produit.
      var_dump($products);
 
+     // pour afficher le nom de chacun des produits, je boucle dans ce grand tableau. Pour chaque produit :
      foreach($products as $product){
+          // j'affiche la colonne name du tableau d'UN produit
           echo($product['name']. '<br><hr><br>');
      }
 
