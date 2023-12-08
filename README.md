@@ -22,10 +22,32 @@ PDO part du même principe mais au lieu de pouvoir être utilisé via une interf
 # 🎦 Live coding
 
 <details>
-  <summary>Live coding</summary>
+  <summary>connexion.php</summary>
   
   ```php
   <?php
+     try
+     {
+          $db = new PDO('mysql:host=localhost;dbname=pdo_test;charset=utf8', 'root', '');
+     }
+     catch (Exception $e)
+     {
+          die('Erreur : ' . $e->getMessage());
+     }
+
+     ?>
+
+```
+
+
+</details>
+
+<details>
+  <summary>Récupération d'un User en Base de Donnée</summary>
+
+  ```php
+  <?php
+     // ne pas oublier d'importer le fichier connexion.php où l'on créer la connexion PDO
       require_once('connexion.php');
 
       // requete de mon user
@@ -36,10 +58,31 @@ PDO part du même principe mais au lieu de pouvoir être utilisé via une interf
 
       echo($user['prenom']);
 
-      ?>
+     ?>
 
 ```
 
+</details>
+
+<details>
+  <summary>Récupération de plusieurs product en Base de Donnée</summary>
+
+  ```php
+  <?php
+     // requete de mes produits
+
+     $request = $db->query('SELECT * FROM product');
+     $products = $request->fetchAll();
+
+     var_dump($products);
+
+     foreach($products as $product){
+          echo($product['name']. '<br><hr><br>');
+     }
+
+     ?>
+
+```
 
 </details>
 
@@ -80,4 +123,7 @@ Ecriture et lecture de données ( Hospital ) :
 - Je sais connecter mon site avec ma base de données (BDD)
 - Je sais récupérer et lire les données de ma BDD
 - Je sais écrire et insérer des données dans ma BDD
+
+```
+
 ```
