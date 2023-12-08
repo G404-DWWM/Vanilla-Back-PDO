@@ -25,6 +25,7 @@ PDO part du même principe mais au lieu de pouvoir être utilisé via une interf
   <summary>Live coding</summary>
   
   ```php
+  <?php
       require_once('connexion.php');
 
       // requete de mon user
@@ -34,8 +35,11 @@ PDO part du même principe mais au lieu de pouvoir être utilisé via une interf
       var_dump($user);
 
       echo($user['prenom']);
-  ```
- 
+
+      ?>
+
+```
+
 
 </details>
 
@@ -76,3 +80,4 @@ Ecriture et lecture de données ( Hospital ) :
 - Je sais connecter mon site avec ma base de données (BDD)
 - Je sais récupérer et lire les données de ma BDD
 - Je sais écrire et insérer des données dans ma BDD
+```
