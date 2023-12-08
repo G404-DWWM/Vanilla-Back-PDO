@@ -5,6 +5,12 @@
 <img src="schema.png"
      alt="schema-pdo"/>
 
+# 🏆 Objectifs
+
+- Je sais connecter mon site avec ma base de données (BDD)
+- Je sais récupérer et lire les données de ma BDD
+- Je sais écrire et insérer des données dans ma BDD
+
 # Différences entre PDO, MySQL, PhpMyadmin
 
 **MySQL** et **MariaDB** sont deux systèmes de base de données relationnelle concurrents.
@@ -32,7 +38,7 @@ PDO part du même principe mais au lieu de pouvoir être utilisé via une interf
      try
      {
           // je crée une variable $db, qui va contenir l'accès à ma base de donnée.
-          // cette variable va contenir l'objet PDO (nous verrons ce qu'est un objet plus tard dans la formation, 
+          // cette variable va contenir l'objet PDO (nous verrons ce qu'est un objet plus tard dans la formation,
           // pour l'instant ça ne vous sea pas utile)
           // pour crée cette connexion il va vous falloir plusieurs parties :
 
@@ -55,11 +61,11 @@ PDO part du même principe mais au lieu de pouvoir être utilisé via une interf
           // vous pouvez utiliser l'objet Exception pour afficher un message d'erreur personnalisé comme ci-dessous
           echo "ya un blem <br>" . "<pre>$message</pre>" ;
      }
-     
+
 
      ?>
 
-```
+````
 </details>
 
 <details>
@@ -90,36 +96,37 @@ PDO part du même principe mais au lieu de pouvoir être utilisé via une interf
 
      ?>
 
-```
+````
+
 </details>
 
 <details>
   <summary>Récupération de plusieurs product en Base de Donnée</summary>
 
-  ```php
-  <?php
-     // requete de mes produits
+```php
+<?php
+   // requete de mes produits
 
-     // on prépare la requète
-     $request = $db->query('SELECT * FROM product');
+   // on prépare la requète
+   $request = $db->query('SELECT * FROM product');
 
-     // on récupère la réponse à la requète grâce à fetchAll(), car j'ai plusieurs produits en BDD
-     $products = $request->fetchAll();
+   // on récupère la réponse à la requète grâce à fetchAll(), car j'ai plusieurs produits en BDD
+   $products = $request->fetchAll();
 
-     // ce var_dump me montre que je reçois un tableau, dans lequel il y a plusieurs tableau, un tableau pour chaque produit.
-     var_dump($products);
+   // ce var_dump me montre que je reçois un tableau, dans lequel il y a plusieurs tableau, un tableau pour chaque produit.
+   var_dump($products);
 
-     // pour afficher le nom de chacun des produits, je boucle dans ce grand tableau. Pour chaque produit :
-     foreach($products as $product){
-          // j'affiche la colonne name du tableau d'UN produit
-          echo($product['name']. '<br><hr><br>');
-     }
+   // pour afficher le nom de chacun des produits, je boucle dans ce grand tableau. Pour chaque produit :
+   foreach($products as $product){
+        // j'affiche la colonne name du tableau d'UN produit
+        echo($product['name']. '<br><hr><br>');
+   }
 
-     ?>
+   ?>
 
 ```
-</details>
 
+</details>
 
 # 📖 Le cours de référence
 
@@ -148,12 +155,6 @@ Utilisation de PDO pour récupérer, lire et afficher des données
 Ecriture et lecture de données ( Hospital ) :
 
 - [simplon-roanne/Exercice-PDO-2](https://github.com/simplon-roanne/Exercice-PDO-2)
-
-# 🏆 Objectifs
-
-- Je sais connecter mon site avec ma base de données (BDD)
-- Je sais récupérer et lire les données de ma BDD
-- Je sais écrire et insérer des données dans ma BDD
 
 ```
 
