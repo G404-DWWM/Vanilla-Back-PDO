@@ -37,10 +37,10 @@ require_once('connexion.php');
 
       echo($user['prenom']);
 
-      ?&gt;
+?&gt;
       <br><br><br><hr><br><br><br>
 
-      &lt;?php
+&lt;?php
       // requete de mes produits
 
       $request = $db->query('SELECT * FROM product');
@@ -51,7 +51,7 @@ require_once('connexion.php');
       foreach ($products as $product) {
         echo($product['name'] . '<br><hr><br>');
       }
-      ?&gt;
+?&gt;
     </code>
 
   </pre>
