@@ -26,7 +26,9 @@ PDO part du même principe mais au lieu de pouvoir être utilisé via une interf
   <pre>
     <code class="language-php">
 
-&lt;?php
+    ```php
+    &lt;?php
+
 require_once('connexion.php');
 
       // requete de mon user
@@ -37,11 +39,11 @@ require_once('connexion.php');
 
       echo($user['prenom']);
 
-?&gt;
+     ?&gt;
       <br><br><br><hr><br><br><br>
 
 &lt;?php
-      // requete de mes produits
+// requete de mes produits
 
       $request = $db->query('SELECT * FROM product');
       $products = $request->fetchAll();
@@ -51,11 +53,10 @@ require_once('connexion.php');
       foreach ($products as $product) {
         echo($product['name'] . '<br><hr><br>');
       }
-?&gt;
-    </code>
 
-  </pre>
-</details>
+?&gt;
+
+```
 
 - **Connexion à une base de données MySQL avec PDO**
 - **La préparation d'une requête**
@@ -94,3 +95,4 @@ Ecriture et lecture de données ( Hospital ) :
 - Je sais connecter mon site avec ma base de données (BDD)
 - Je sais récupérer et lire les données de ma BDD
 - Je sais écrire et insérer des données dans ma BDD
+```
