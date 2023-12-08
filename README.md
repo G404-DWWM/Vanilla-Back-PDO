@@ -23,8 +23,6 @@ PDO part du même principe mais au lieu de pouvoir être utilisé via une interf
 
 <details>
   <summary>Live coding</summary>
-  <details>
-  <summary>Code PHP</summary>
   <pre>
     <code class="language-php">
       require_once('connexion.php');
@@ -39,8 +37,6 @@ PDO part du même principe mais au lieu de pouvoir être utilisé via une interf
     </code>
 
   </pre>
-</details>
-
 </details>
 
 - **Connexion à une base de données MySQL avec PDO**
