@@ -21,9 +21,8 @@ PDO part du même principe mais au lieu de pouvoir être utilisé via une interf
 
 # 🎦 Live coding
 
-- **Connexion à une base de données MySQL avec PDO**
 <details>
-  <summary>connexion.php</summary>
+  <summary>Le fichier connexion.php</summary>
   
   ```php
   <?php
@@ -41,17 +40,21 @@ PDO part du même principe mais au lieu de pouvoir être utilisé via une interf
 ```
 </details>
 
-- **La préparation d'une requête**
 <details>
   <summary>Récupération d'un User en Base de Donnée</summary>
 
   ```php
   <?php
+     // dans un nouveau fichier que l'on peut nommer index.php
      // ne pas oublier d'importer le fichier connexion.php où l'on créer la connexion PDO
       require_once('connexion.php');
 
-      // requete de mon user
+      // requete de mon user :
+
+      // on commence par préparer la requète grace à query()
       $request =  $db->query('SELECT * FROM user');
+
+      // on récupère la réponse à la requète grâce à fetch(), car je n'ai qu'un seul user en BDD
       $user = $request->fetch();
 
       var_dump($user);
@@ -63,7 +66,6 @@ PDO part du même principe mais au lieu de pouvoir être utilisé via une interf
 ```
 </details>
 
-- **La récupération de la réponse d’une requête**
 <details>
   <summary>Récupération de plusieurs product en Base de Donnée</summary>
 
@@ -71,7 +73,10 @@ PDO part du même principe mais au lieu de pouvoir être utilisé via une interf
   <?php
      // requete de mes produits
 
+     // on prépare la requète
      $request = $db->query('SELECT * FROM product');
+
+     // on récupère la réponse à la requète grâce à fetchAll(), car j'ai plusieurs produits en BDD
      $products = $request->fetchAll();
 
      var_dump($products);
