@@ -21,6 +21,7 @@ PDO part du même principe mais au lieu de pouvoir être utilisé via une interf
 
 # 🎦 Live coding
 
+- **Connexion à une base de données MySQL avec PDO**
 <details>
   <summary>connexion.php</summary>
   
@@ -38,10 +39,9 @@ PDO part du même principe mais au lieu de pouvoir être utilisé via une interf
      ?>
 
 ```
-
-
 </details>
 
+- **La préparation d'une requête**
 <details>
   <summary>Récupération d'un User en Base de Donnée</summary>
 
@@ -61,9 +61,9 @@ PDO part du même principe mais au lieu de pouvoir être utilisé via une interf
      ?>
 
 ```
-
 </details>
 
+- **La récupération de la réponse d’une requête**
 <details>
   <summary>Récupération de plusieurs product en Base de Donnée</summary>
 
@@ -83,12 +83,8 @@ PDO part du même principe mais au lieu de pouvoir être utilisé via une interf
      ?>
 
 ```
-
 </details>
 
-- **Connexion à une base de données MySQL avec PDO**
-- **La préparation d'une requête**
-- **La récupération de la réponse d’une requête**
 
 # 📖 Le cours de référence
 
