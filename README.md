@@ -42,10 +42,10 @@ PDO part du même principe mais au lieu de pouvoir être utilisé via une interf
           // pour l'instant ça ne vous sea pas utile)
           // pour crée cette connexion il va vous falloir plusieurs parties :
 
-          // le dns, qui va correspondre à la base de donnée que l'on utilise, ici mysql
+          // le dsn (data source name), qui va correspondre à la base de donnée que l'on utilise, ici mysql
           // suivi de l'hote après host=, ici localhost
           // suivi du nom de la base de donnée après "dbname="
-          $dns = 'mysql:host=localhost;dbname=pdo_test';
+          $dsn = 'mysql:host=localhost;dbname=pdo_test';
 
 
           // le nom d'utilisateur, utilisé dans la base de donnée, oar défaut sur wampserver c'est 'root'
