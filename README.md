@@ -23,8 +23,8 @@ PDO part du même principe mais au lieu de pouvoir être utilisé via une interf
 
 <details>
   <summary>Live coding</summary>
-  <pre>
-    <code class="language-php">
+  
+  ```php
       require_once('connexion.php');
 
       // requete de mon user
@@ -34,9 +34,9 @@ PDO part du même principe mais au lieu de pouvoir être utilisé via une interf
       var_dump($user);
 
       echo($user['prenom']);
-    </code>
+  ```
+ 
 
-  </pre>
 </details>
 
 - **Connexion à une base de données MySQL avec PDO**
