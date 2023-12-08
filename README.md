@@ -25,9 +25,9 @@ PDO part du même principe mais au lieu de pouvoir être utilisé via une interf
   <summary>Live coding</summary>
   <pre>
     <code class="language-php">
-      <?php
 
-      require_once('connexion.php');
+&lt;?php
+require_once('connexion.php');
 
       // requete de mon user
       $request =  $db->query('SELECT * FROM user');
@@ -37,10 +37,10 @@ PDO part du même principe mais au lieu de pouvoir être utilisé via une interf
 
       echo($user['prenom']);
 
-      ?>
+      ?&gt;
       <br><br><br><hr><br><br><br>
 
-      <?php
+      &lt;?php
       // requete de mes produits
 
       $request = $db->query('SELECT * FROM product');
@@ -51,11 +51,11 @@ PDO part du même principe mais au lieu de pouvoir être utilisé via une interf
       foreach ($products as $product) {
         echo($product['name'] . '<br><hr><br>');
       }
-      ?>
+      ?&gt;
     </code>
+
   </pre>
 </details>
-
 
 - **Connexion à une base de données MySQL avec PDO**
 - **La préparation d'une requête**
