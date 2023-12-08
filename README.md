@@ -155,7 +155,3 @@ Utilisation de PDO pour récupérer, lire et afficher des données
 Ecriture et lecture de données ( Hospital ) :
 
 - [simplon-roanne/Exercice-PDO-2](https://github.com/simplon-roanne/Exercice-PDO-2)
-
-```
-
-```
