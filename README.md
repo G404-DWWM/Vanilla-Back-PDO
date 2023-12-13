@@ -54,7 +54,7 @@ PDO part du même principe mais au lieu de pouvoir être utilisé via une interf
           // le mot de passe utilisé sur votre base de donnée
           $password = '';
 
-          $db = new PDO( $dns, $user, $password);
+          $db = new PDO( $dsn, $user, $password);
      }
      catch (Exception $message){
           // dans le cas où la connexion à la base de donnée serait mal executé (par exemple un mauvais nom d'utilisateur)
